@@ -15,11 +15,15 @@
         <br><br>
         <input type="number" name="idade" id="idade" placeholder="DIgite sua idade" required>
         <br><br>
+        <label for="admissao">Admissão</label>
+        <br><br>
         <input type="date" name="admissao" id="admissao" required>
+        <br><br>
+        <label for="demissao">Demissão</label>
         <br><br>
         <input type="date" name="demissao" id="demissao">
         <br><br>
-        <button type="button" onclick="formulario.adicionarLinha()">Adicionar</button>
+        <button type="button" onclick="adicionarLinha()">Adicionar</button>
     </form>
     <br><br>
     <table id="tabelaDados">
@@ -32,6 +36,8 @@
                 <th>Demissão</th>
             </tr>
         </thead>
+        <tbody>
+        </tbody>
     </table>
     <script src="./formulario.js"></script>
 </body>
