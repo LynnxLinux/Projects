@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Aula 07</title>
+</head>
+<body>
+    <h1>Atividade 07/10</h1>
+    <p>Desenvolva um sistema que cadastre os calculos de bhaskara e listem em uma tabela. Utilize os campos de entrada A, B, C e o X
+        caso for 1 cadastra na coluna x' e se for 2 cadastra x". Caso não for preenchido corretamente alerte o usuario, tanto para os dados de Delta
+        quanto para x.
+        serão 5 colunas: n, A, B, C e o X
+    </p>
+    <hr>
+    <form id="calculosForm">Insira o Valor de A</form>
+        <label for="a">A:</label>
+        <input type="number" id="a" name="a" required>
+<br><br>
+    <form id="calculosForm">Insira o Valor De B</form>
+        <label for="b">B:</label>
+        <input type="number" id="B" name="B" required>
+<br><br>
+    <form id="calculosForm">Insira o Valor de C</form>
+        <label for="c">C:</label>
+        <input type="number" id="C" name="C" required>
+
+        <button type="submit" onclick="calcular">Calcular</button>
+        <table id="tabelaCalculo">
+            <th>N</th>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>X</th>
+        </table>
+
+</body>
+</html>
